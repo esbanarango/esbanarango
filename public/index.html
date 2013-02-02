@@ -9,7 +9,7 @@
     <title>Esteban Arango Medina</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-
+    <link href='http://fonts.googleapis.com/css?family=Dosis:500,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/prefixfree.min.js"></script>
@@ -23,8 +23,22 @@
       <s><input id="d" type="checkbox" /><label for="d"></label></s>
       <s><input id="e" type="checkbox" /><label for="e"></label></s>
       <s><input id="f" type="checkbox" /><label for="f"></label></s>
-      <s><input id="g" type="checkbox" /><label for="g"></label></s>
-      <s><input id="h" type="checkbox" /><label for="h"></label></s>
+      <div class="container-messages">
+        <div class="title">Esbanarango</div> 
+        <div class="messages" >"Juega frisbee, progama, lava platos y canta. oh là là!"</div> 
+      </div>    
+      <section class="twitter-button">
+        <div class="button">
+          <a href="https://twitter.com/esbanarango" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @esbanarango</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+        <div class="cover">
+          <div class="innie"></div>
+          <div class="spine"></div>
+          <div class="outie"></div>
+        </div>
+        <div class="shadow"></div>
+      </section> 
     </div>
     <div class="ground"></div>
 
@@ -32,11 +46,15 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-    <script>
-        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-38152308-2']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  </script>
   </body>
 </html>

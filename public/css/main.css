@@ -93,6 +93,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+@font-face {
+  font-family:icon;
+  font-style: normal;
+font-weight: normal;
+    src: url('http://bennettfeely.com/fonts/icons.woff') format("woff"); }
 
 * { box-sizing:border-box; }
 html, body { position:relative; height:100%; }
@@ -134,6 +139,7 @@ header {
   height:5%;
   background:darkolivegreen;
   border-radius:10% 10% 0 0;
+  opacity: 0.3;
 }
 
 s {
@@ -193,6 +199,142 @@ label {
 label:hover {
  transform:scale(1.1); 
 }
+
+.container-messages{
+    margin-top: 170px; 
+    font-family: "Open Sans Light", "Open Sans", "Segoe UI", Helvetica, Arial;
+    color: #888;
+    font-weight: lighter;
+}
+.container-messages .messages{
+    padding-top: 10px;
+    font: .8rem/1 sans-serif;
+    color: #fff;
+}
+.container-messages .title{
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    font-weight: 800;
+    font-size: 4.2em;
+    color: #29abe2;
+    text-shadow: 0 1px 4px rgba(255, 255, 255, 0.7), 0 2px 0 #198aba, 0 3px 0 #198aba, 0 4px 0 #198aba, 0 5px 0 #198aba, 0 6px 0 #198aba, 0 7px 0 #198aba, 0 8px 0 #198aba, 0 8px 7px black;
+}
+
+
+/*Twitter Button*/
+
+.twitter-button, 
+.twitter-button .button, 
+.twitter-button .cover, 
+.twitter-button .innie, 
+.twitter-button .spine, 
+.twitter-button .outie, 
+.twitter-button .shadow {
+  /* See it in slo-mo, you can change this */
+  transition: .6s;
+}
+
+
+.twitter-button, .twitter-button button { transition-timing-function: ease; }
+
+.twitter-button {
+  margin-top: 20px; 
+  display: inline-block;
+  position: relative;
+  padding: .375rem .375rem 0;
+  height: 2.5rem;
+  background: #A9ADB6;
+  border-radius: .25rem;
+  perspective: 300;
+    box-shadow: 0px -2px 5px #1a9bff;
+  /*box-shadow: 0 -1px 2px #fff, inset 0 1px 2px rgba(0,0,0,.2), inset 0 .25rem 1rem rgba(0,0,0,.1);*/
+}
+
+
+.twitter-button .button { opacity: 0; }
+
+.twitter-button .cover {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  transform-origin: center bottom;
+  transform-style: preserve-3d;
+  font: 1.25em/2 icon;
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.twitter-button .innie, 
+.twitter-button .outie, 
+.twitter-button .spine, 
+.twitter-button .shadow { position: absolute; width: 100%; }
+
+.twitter-button .innie, .twitter-button .outie {
+  height: 100%;
+  background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,.1) 100%);
+  border-radius: .25rem;
+}
+.twitter-button .innie:after, .twitter-button .outie:after { content:"t"; }
+
+.twitter-button .innie {
+  background-color: #67E2FE;
+  text-shadow: 0 -2px 4px rgba(0,0,0,.2);
+}
+
+.twitter-button .spine {
+  top: .25rem;
+  background: #20C7F3;
+  height: .25rem;
+  transform: rotateX(90deg);
+  transform-origin: center top;
+}
+
+.twitter-button .shadow {
+  top: 100%;
+  left: 0;
+  height: 3.5rem;
+  transform-origin: center top;
+  transform: rotateX(90deg);
+  opacity: 0;
+  z-index: 0;
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,.6) 0%, transparent 100%);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.6) 0%, transparent 100%);
+  border-radius: .4rem;
+
+}
+
+.twitter-button .outie {
+  background-color: #2EC8FA;
+  transform: translateZ(.25rem);
+  text-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
+.twitter-button:hover { background: #EBEFF2; }
+.twitter-button:hover .button { opacity: 1; }
+
+.twitter-button:hover .cover, .twitter-button:hover .innie, .twitter-button:hover .spine, .twitter-button:hover .outie, .twitter-button:hover .spine { transition-timing-function: cubic-bezier(.2,.7,.1,1.1); }
+
+.twitter-button:hover .cover { transform: rotateX(-120deg);  }
+
+.twitter-button:hover .innie { background-color: #3ADAFC; }
+.twitter-button:hover .spine { background-color: #52B1E0; }
+.twitter-button:hover .outie { background-color: #2174A0; color: rgba(255,255,255,0); }
+
+.twitter-button:hover .shadow { 
+  opacity: 1;
+  transform: rotateX(45deg) scale(.95);
+}
+
+
+.twitter-button small {
+  display: block;
+  padding: 5rem;
+  font: .8rem/1 sans-serif;
+  color: #777;
+}
+.twitter-button small a { color: #222; text-decoration: none; border-bottom: 1px solid #ccc; }
+.twitter-button small a:hover { border-bottom-color: #222; }
 
 
 /* ==========================================================================
