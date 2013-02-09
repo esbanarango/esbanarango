@@ -5,7 +5,10 @@ $(function() {
   $.backstretch('./../images/back.jpg');
 
   $(window).on("backstretch.show", function (e, instance) {
-    $('.sky').fadeIn();
+    $('.sky').css('display','block');
+    $('#card').addClass('animated  flipInX');
+    $('.messages').addClass('animated bounceIn');
+    setTimeout("$('#card').removeClass('animated  flipInX')",1000);
   });
 
   // Fixes for the rest
