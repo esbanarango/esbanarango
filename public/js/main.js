@@ -6,9 +6,7 @@ $(function() {
 
   $(window).on("backstretch.show", function (e, instance) {
     $('.sky').css('display','block');
-    $('#card').addClass('animated  flipInX');
     $('.messages').addClass('animated bounceIn');
-    setTimeout("$('#card').removeClass('animated  flipInX')",1000);
   });
 
   // Fixes for the rest
