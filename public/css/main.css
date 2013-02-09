@@ -181,15 +181,15 @@ s.frisbee:nth-child(13){ animation-delay:16s; }
 s.frisbee:nth-child(14){ animation-delay:17s; }
 s.frisbee:nth-child(15){ animation-delay:18s; }
 
-s.frisbee:nth-of-type(3n) label { background:white; }
-s.frisbee:nth-of-type(3n+1) label { background:crimson; }
-s.frisbee:nth-of-type(3n+2) label { background:white; }
+s.frisbee:nth-of-type(3n) label { background:#aaa; }
+s.frisbee:nth-of-type(3n+1) label { background:#89988E; }
+s.frisbee:nth-of-type(3n+2) label { background:#aaa; }
 
 .frisbee label {
   display:inline-block;
   background:crimson;
-  width:5rem;
-  height:1rem;
+  width:4rem;
+  height:0.8rem;
   border-radius:100% 100% .5rem .5rem;
   transition:.2s;
   box-shadow:inset 0 -.25rem rgba(0,0,0,.2);
@@ -292,7 +292,7 @@ section:hover .prof:nth-child(2) {
   font-family: "Open Sans", sans-serif;
   height: 250px;
   position: relative;
-  left: -220px;
+  left: -210px;
   border: 1px solid rgba(0,0,0,.4);
   color: #888;
   line-height: 16px;
