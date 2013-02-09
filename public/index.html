@@ -6,10 +6,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="/favicon.ico">
     <title>Esteban Arango Medina</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <link href='http://fonts.googleapis.com/css?family=Dosis:500,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/prefixfree.min.js"></script>
@@ -17,30 +17,35 @@
   </head>
   <body>
     <div class="sky">
-      <s><input id="a" type="checkbox" /><label for="a"></label></s>
-      <s><input id="b" type="checkbox" /><label for="b"></label></s>
-      <s><input id="c" type="checkbox" /><label for="c"></label></s>
-      <s><input id="d" type="checkbox" /><label for="d"></label></s>
-      <s><input id="e" type="checkbox" /><label for="e"></label></s>
-      <s><input id="f" type="checkbox" /><label for="f"></label></s>
-      <div class="container-messages">
-        <div class="title">Esbanarango</div> 
-        <div class="messages" >"Juega frisbee, progama, lava platos y canta. oh là là!"</div> 
-      </div>    
-      <section class="twitter-button">
-        <div class="button">
-          <a href="https://twitter.com/esbanarango" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @esbanarango</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        </div>
-        <div class="cover">
-          <div class="innie"></div>
-          <div class="spine"></div>
-          <div class="outie"></div>
-        </div>
-        <div class="shadow"></div>
-      </section> 
+      <!-- Frisbees -->
+      <s class="frisbee" ><label for="a"></label></s>
+      <s class="frisbee" ><label for="b"></label></s>
+      <s class="frisbee" ><label for="c"></label></s>
+
+      <div class="containerc-content">
+        <section id="card" class="card stamp">
+          <aside class="prof"></aside>
+          <aside class="prof"></aside>
+          <div class="clear" ></div>
+          <aside class="sidebar">
+            <hgroup class="under">
+              <h3 class="location">Envigadeño</h3>
+              <ul class="contact_information">
+                <li class="where">Bordeaux, France</li>
+                <li class="work">Ruby, Js.</li>
+                <li class="heart"><span>Animals!</span></li>
+                <li class="github"><a href="https://github.com/esbanarango" target="_blank" class="nostyle">esbanarango</a></li>
+                <li class="resume"><a href="https://www.dropbox.com/s/nuhrfp9i3b85uie/Resume.pdf" target="_blank" class="nostyle">Download my resume</a></li>
+              </ul>
+            </hgroup>
+          </aside>
+        </section>
+        
+        <div class="messages" >"Plays frisbee, program, washes dishes and sings. Oh la la!"</div> 
+      </div> 
+         
     </div>
-    <div class="ground"></div>
+    <!-- <div class="ground"></div> -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
