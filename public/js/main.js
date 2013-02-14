@@ -10,7 +10,7 @@ $(function() {
   });
 
   // Fixes for the rest
-  if (!$.browser.webkit) {
+  if (!bowser.chrome) {
     $('.containerc-content').find('.sidebar').css({'top': '-300px','left': '330px','position': 'relative'})
     $('#card').css({'height': '330px'});
   }
