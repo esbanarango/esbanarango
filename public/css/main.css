@@ -569,7 +569,7 @@ section:hover .prof:nth-child(2) {
 }
 
 section:hover .sidebar .under {
-  left: -20px;
+  left: -22px;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
   opacity: 1;
@@ -742,25 +742,25 @@ a.nostyle {
 
 @media screen and (max-width:780px) {
   .card {
-    padding-left: 170px;
+    padding-left: 170px !important;
   }
 }
 
 @media screen and (max-width:680px) {
   .card {
-    padding-left: 150px;
+    padding-left: 150px !important;
   }
 }
 
 @media screen and (max-width:580px) {
   .card {
-    padding-left: 120px;
+    padding-left: 120px !important;
   }
 }
 
 @media screen and (max-width:480px) {
   .card {
-    padding-left: 23px;
+    padding-left: 23px !important;
   }
 }
 
