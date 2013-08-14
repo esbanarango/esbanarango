@@ -452,11 +452,9 @@ s.frisbee:nth-of-type(3n+2) label {
 }
 
 .card {
-  display: -webkit-flex;
-  display: flex;
-  width: 330px;
-  margin: 0 auto;
-
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  padding-left: 215px;
   -webkit-transition: opacity .25s, -webkit-filter .25s, filter .25s;
   -moz-transition: opacity .25s, -o-transition:  opacity .25s, -o-filter .25s, filter .25s;
   -ms-transition: opacity .25s, -ms-filter .25s, filter .25s;
@@ -740,6 +738,30 @@ a.nostyle {
   padding-top: 10px;
   font: .8rem/1 sans-serif;
   color: #ddd;
+}
+
+@media screen and (max-width:780px) {
+  .card {
+    padding-left: 170px;
+  }
+}
+
+@media screen and (max-width:680px) {
+  .card {
+    padding-left: 150px;
+  }
+}
+
+@media screen and (max-width:580px) {
+  .card {
+    padding-left: 120px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .card {
+    padding-left: 23px;
+  }
 }
 
 /* ==========================================================================
