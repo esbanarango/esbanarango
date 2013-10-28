@@ -1,5 +1,4 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-gem 'rack'
-gem 'vienna'
+gem 'rack-rewrite'
