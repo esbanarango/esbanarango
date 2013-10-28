@@ -1,10 +1,10 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    rack-rewrite (1.4.01)
+    rack (1.5.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  rack-rewrite
+  rack

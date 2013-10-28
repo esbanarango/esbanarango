@@ -1,8 +1,14 @@
-require 'rack/rewrite'
+use Rack::Static, 
+  :urls => ["/images", "/js", "/css", "/favicon.ico"],
+  :root => "public"
 
-use Rack::Rewrite do
-  rewrite "/", "/index.html"
-  rewrite "/mobile", "/mobile.html"
-end
-
-run Rack::File.new("public")
+run lambda { |env|
+  [
+    200, 
+    {
+      'Content-Type'  => 'text/html', 
+      'Cache-Control' => 'public, max-age=86400' 
+    },
+    File.open('public/index.html', File::RDONLY)
+  ]
+}
