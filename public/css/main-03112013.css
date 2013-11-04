@@ -691,6 +691,11 @@ label {
   background-image: url('http://schulzmarcel.de/x/icons/globe_24.png');
 }
 
+.under ul.contact_information li.heart .dynamo {
+  height: 25px !important;
+  text-align: right !important;
+}
+
 .under ul.contact_information li.heart:before {
   background-image: url('./../images/icons/heart.png');
 }

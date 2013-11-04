@@ -1,4 +1,4 @@
-
+  
 $(function() {
 
   // Background image
@@ -15,14 +15,5 @@ $(function() {
     $('#card').css({'height': '330px', 'margin': '0 auto', 'width': '550px','padding-left':'109px'});
   }
   $('.containerc-content').find('.sidebar').show();
-  
-  $('ul.contact_information').find('li.heart').on( "hover", function( e ) {
-    var text = ($(this).find('span').text() == 'Animals!')? 'Vegetarian!':'Animals!'
-    var t = this
-    $(t).find('span').slideToggle('fast',function() {
-      $(t).find('span').text(text);
-      $(t).find('span').slideToggle('fast')
-    });
-  });
-
+  $('.dynamo').dynamo();
 });
