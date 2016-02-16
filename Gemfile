@@ -1,4 +1,6 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-gem 'rack'
+ruby '2.2.3'
+
+gem 'rack', '~> 1.6', '>= 1.6.4'
